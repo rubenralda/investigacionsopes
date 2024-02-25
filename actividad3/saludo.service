@@ -1,0 +1,11 @@
+[Unit]
+Description=Servicio de saludo y fecha
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=./script.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
